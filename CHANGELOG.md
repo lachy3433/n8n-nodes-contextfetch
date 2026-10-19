@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Published from GitHub Actions with an npm provenance statement (n8n verification requirement). No code changes.
+
 ## 0.1.0
 
 - First release: the ContextFetch node (Search, Get Contents, Answer, Research, Crawl, Map), usable as an AI Agent tool.
