@@ -1,0 +1,60 @@
+{
+	"name": "n8n-nodes-contextfetch",
+	"version": "0.1.0",
+	"description": "n8n node for ContextFetch: web search, page Markdown, extractive answers, research, crawl and map for AI agents. Works as an AI Agent tool.",
+	"license": "MIT",
+	"homepage": "https://contextfetch.dev",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"contextfetch",
+		"web-search",
+		"markdown",
+		"crawl",
+		"ai-agent",
+		"tavily-alternative",
+		"exa-alternative"
+	],
+	"author": {
+		"name": "ContextFetch",
+		"email": "hello@contextfetch.dev",
+		"url": "https://contextfetch.dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lachy3433/n8n-nodes-contextfetch.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "node --test test/GenericFunctions.test.mjs",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/ContextFetchApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ContextFetch/ContextFetch.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.52.5",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-contextfetch.contextFetch",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://www.npmjs.com/package/n8n-nodes-contextfetch#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://contextfetch.dev/docs/reference"
+			}
+		]
+	}
+}
